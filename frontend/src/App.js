@@ -6,6 +6,7 @@ import './App.css';
 import { routes } from "./urls"
 import Welcome from "./components/welcome"
 import Home from "./components/home"
+import CreateQuiz from "./components/CreateQuiz"
 
 function App() {
   return (
@@ -26,16 +27,16 @@ function App() {
         <hr />
         <Routes>
           <Route
-            // exact
             path={routes.root}
-            // path="create-quiz"
             element={<Home />} 
           />
           <Route
-            // exact
             path={routes.hello}
-            // path="create-quiz"
             element={<Welcome />} 
+          />
+          <Route
+            path={routes.createQuiz}
+            element={<CreateQuiz />} 
           />
 
         </Routes>
